@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Quiz: History of the U.S.</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="jumbotron jumbotron-fluid rounded border border-secondary">
+            <div class="container">
+              <h1 class="display-4 text-center text-info font-weight-bold font-italic">Quiz: History of the U.S.</h1>
+              <br>
+              <p class="text-center">How close can you score to 100? &#128559;</p>
+              <br>
+              <a id = 'highScores' href = 'scores.html'>High Scores</a>
+              <nav id = 'timer'>Seconds Remaining:</nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main class='d-flex justify-content-center align-items-start'>
+
+        <div id = 'questionBox' class='center justify-content-center'>
+
+             <section id = 'question-container' class='hide' class='text-center'>
+                 <div id = 'quizQuestions'></div>
+                 <div id = 'answerOptions' class = 'btn-grid btn-sm'></div> 
+             </section> 
+
+             <section class = 'controller' class='hide'>
+                 <button id = 'start-button' class = 'btn btn-lg btn-primary'>Start</button> 
+            </section>
+
+            <section id = 'userScore' class='hide'>
+                <div id = 'score'></div>
+                <input placeholder='Please Enter Initials' id = 'initials'>
+                <button id = 'submit' class = 'btn'>Enter</button>
+            </section>
+
+         </div>  
+          
+     </main>
+
+<script src='./assets/js/script.js'></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

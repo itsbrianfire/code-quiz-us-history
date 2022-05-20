@@ -1,0 +1,102 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root {
+    --hue-neutral:200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+header {
+    margin:auto;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 46px;
+    color: blueviolet;
+    text-align: center;
+}
+
+#highScores {
+    float:left;
+    font-size: 30px;
+}
+
+nav {
+    float:right;
+    font-size: 30px;
+}
+
+main {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+body {
+    background: url(./golden-gate-img-unsplash.jpeg);
+    background-size: cover;
+}
+
+#questionBox {
+    width: 900px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 14px 4px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1 px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding:  5px 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:rgba(144, 224, 255, 0.749);
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.incorrect {
+    --hue: var(--hue-wrong);
+}
+
+.controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+#scoresBtn {
+    float:left;
+    font-size: 30px;
+}
